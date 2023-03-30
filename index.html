@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chain Affiliate | On-Chain Affiliate Management Platform</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/3VoeF6lS2wT3GzEzz1SJn9j6C9GAYtiNmnlfta"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 0rem;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-weight: 1500;
+        font-size: 48px;
+        text-align: center;
+      }
+
+      h3 {
+        color: #ffffff;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .two-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .two-columns > div {
+        flex: 1;
+        padding: 1rem;
+      }
+
+      .section {
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        font-weight: 100;
+      }
+
+      .signup-link {
+        display: inline-block;
+        background-color: #0d6efd;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      code {
+        display: block;
+        background-color: #09142b;
+        padding: 1rem;
+        border-radius: 5px;
+        color: #ffffff;
+        text-align: left;
+        font-size: 18px;
+        align-self: center;
+        margin-top: 5rem;
+      }
+
+      .top {
+        background-image: url("./images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        font-weight: 100;
+      }
+      header {
+        background-color: #000000;
+        padding: 1rem 0;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo img {
+        max-height: 50px;
+        max-width: 100%;
+      }
+
+      .side-image {
+        display: block;
+        align-self: center;
+        padding-left: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="/images/logo.png" alt="Chain Affiliate" />
+        </div>
+        <div class="header-signup">
+          <a class="signup-link" href="/signup">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="top">
+        <h1>First On-Chain Affiliate Management Solution</h1>
+        <h3>
+          Trustless automated affiliate management powered by blockchain
+          technology
+        </h3>
+      </div>
+      <div class="section">
+        <div>
+          <h1>Tracking you can trust</h1>
+        </div>
+        <div class="two-columns">
+          <div>
+            <p>
+              No more data discrepancies between analytics platforms.
+              Conversions are automatically logged to the blockchain and can be
+              verified by all parties allowing for complete transparency.
+            </p>
+            <p><a class="signup-link" href="/signup">Sign up</a></p>
+          </div>
+          <div>
+            <div><img class="side-image" src="/images/analytics.png" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div>
+          <h1>Lower operator costs</h1>
+        </div>
+        <div class="two-columns">
+          <div>
+            <p>
+              Other affiliate management platforms take up to 40% from affiliate
+              commission. Our, completely on-chain solution only charges a 3%
+              transaction fee so you can pay more to your affiliates and recruit
+              the best affiliates out there.
+            </p>
+            <p><a class="signup-link" href="/signup">Sign up</a></p>
+          </div>
+          <div>
+            <div>
+              <img class="side-image" src="/images/accounting.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div>
+        <h1>Easy to Use SDK</h1>
+      </div>
+      <div class="two-columns">
+        <div>
+          <p>
+            Integrating the affiliate platform with other systems, such as
+            e-commerce platforms, content management systems, and analytics
+            tools, can be challenging and time-consuming. With the Affiliate
+            SDK, you can easily integrate the affiliate platform with existing
+            payment solutions like Stripe to get started quickly.
+          </p>
+          <p><a class="signup-link" href="/signup">Sign up</a></p>
+        </div>
+        <div>
+          <code>
+            const AffiliateSDK = require('./affiliate-sdk'); <br />
+            const config = require('./config'); // Initialize the Affiliate SDK
+            <br />
+            const sdk = new AffiliateSDK( <br />
+            config.storePrivateKey, <br />
+            config.contractAddress, <br />
+            config.providerUrl,<br />
+            config.tokenAddress );
+          </code>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

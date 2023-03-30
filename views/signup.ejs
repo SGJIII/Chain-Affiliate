@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 0rem;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-weight: 1500;
+        font-size: 48px;
+        text-align: center;
+      }
+
+      h3 {
+        color: #ffffff;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .two-columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .two-columns > div {
+        flex: 1;
+        padding: 1rem;
+      }
+
+      .section {
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        font-weight: 100;
+      }
+
+      .signup-link {
+        display: inline-block;
+        background-color: #0d6efd;
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      code {
+        display: block;
+        background-color: #09142b;
+        padding: 1rem;
+        border-radius: 5px;
+        color: #ffffff;
+        text-align: left;
+        font-size: 18px;
+        align-self: center;
+        margin-top: 5rem;
+      }
+
+      .top {
+        background-image: url("./images/andy-holmes-rCbdp8VCYhQ-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        font-weight: 100;
+      }
+      header {
+        background-color: #000000;
+        padding: 1rem 0;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .logo img {
+        max-height: 50px;
+        max-width: 100%;
+      }
+
+      .side-image {
+        display: block;
+        align-self: center;
+        padding-left: 10rem;
+      }
+      .signup-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      button {
+        background-color: #0d6efd;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="/images/logo.png" alt="Chain Affiliate" />
+        </div>
+        <div class="header-signup">
+          <a class="signup-link" href="/signup">Sign up</a>
+        </div>
+      </div>
+    </header>
+    <h1>Signup</h1>
+    <div class="signup-form">
+      <form action="/signup" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" />
+        <label for="numberOfAffiliates">Number of Affiliates:</label>
+        <input
+          type="number"
+          id="numberOfAffiliates"
+          name="numberOfAffiliates"
+          min="0"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
